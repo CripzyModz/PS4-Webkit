@@ -12,7 +12,8 @@ var playstationOrNot = ua.substring(ua.indexOf("5.0 (") + 5, ua.indexOf(") Apple
       {
       alert("PlayStation 4 Not Detected!")
 
-        document.write('<div class="alert alert-danger">error 0</div>');
+        document.write('<div class="alert alert-danger">Disabled...</div>');
+	document.write('<div class="alert alert-danger">Reason: Unsupported Platform</div>');
         window.stop();  
 if ($.browser.msie) {document.execCommand("Stop");};
         disableFeatures = true;
