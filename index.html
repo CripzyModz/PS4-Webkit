@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang=''>
+
+<script>
+// WebKit Compatible
+
+     var disableFeatures = false;
+      var ua = navigator.userAgent;
+var playstationOrNot = ua.substring(ua.indexOf("5.0 (") + 5, ua.indexOf(") Apple") - 7);
+
+      if(playstationOrNot != "PlayStation")
+      {
+      alert("PS4 Not Detected!")
+
+        document.write('<div class="alert alert-danger">error 0</div>');
+        window.stop();  
+if ($.browser.msie) {document.execCommand("Stop");};
+        disableFeatures = true;
+      }
+	  
+	       else if(ua.substring(ua.indexOf("1.0 (") + 19, ua.indexOf(") Apple")) != "5.55")
+      {
+      alert("Congratulations!,  PlayStation Detected")
+                window.stop();   
+if ($.browser.msie) {document.execCommand("Stop");};
+        disableFeatures = true;
+      }
+	  
+	</script>
+
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>PlayStation 4 WebKit</title>
+</head>
+<body>
+
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='#'>Exploits</a>
+      <ul>
+         <li><a href='#'>3.55 Exploit's</a>
+            <ul>
+               <li><a href='exploits/3.55/Playground/index.html'>Playground</a></li>
+            </ul>
+			
+			         <li><a href='#'>5.55 Exploit's</a>
+            <ul>
+               <li><a href='exploits/5.55/PoC Exploit/index.html'>PoC Exploit</a></li>
+            </ul>
+			
+         </li>
+            <ul>
+               <li><a href='#'>Sub Product</a></li>
+               <li><a href='#'>Sub Product</a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a href='About.html'>About</a></li>
+</ul>
+</div>
+
+<center>
+<br>
+<h1 style="font-family: arial">PS4 WebKit</h1>
+<p style="font-family: arial">A private webkit by Cripzz</p>
+<p style="font-family: arial">A WebKit exploit powered by MiniWeb and Open Source Exploits...</p>
+
+	</center>
+
+</body>
+<html>
