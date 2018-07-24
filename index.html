@@ -21,7 +21,6 @@ body {
 
 <body style = "background: url(http://wallvie.com/wp-content/uploads/2018/05/Ps3-Background-Full-Hd-Pics-Photos-Playstation-Wallpaper-For-Mobile.jpg); background-size: 100%;">
 
-
 <script>
 
 // WebKit Compatible
@@ -35,15 +34,13 @@ var playstationOrNot = ua.substring(ua.indexOf("5.0 (") + 5, ua.indexOf(") Apple
       alert("PlayStation 4 Not Detected!")
 
         document.write('<div class="alert alert-danger">Disabled...</div>');
-	document.write('<div class="alert alert-danger">Reason: Unsupported Platform</div>');
-  	document.write('<div class="alert alert-danger">We noticed that your using PC or Mobile... we have a pc download for osmk demon if your downloading:</div>');
-  	document.write('<a href="exploits\5.55\OSMK DEMON\index.html"></a>');
+  document.write('<div class="alert alert-danger">Reason: Unsupported Platform</div>');
         window.stop();
 if ($.browser.msie) {document.execCommand("Stop");};
         disableFeatures = true;
       }
 
-	       else if(ua.substring(ua.indexOf("1.0 (") + 19, ua.indexOf(") Apple")) != "5.55")
+         else if(ua.substring(ua.indexOf("1.0 (") + 19, ua.indexOf(") Apple")) != "5.55")
       {
       alert("Congratulations!,  PlayStation 4 Detected")
         disableFeatures = true;
@@ -75,6 +72,7 @@ if ($.browser.msie) {document.execCommand("Stop");};
             <ul>
                <li><a href='exploits/5.55/PoC Exploit/index.html'>PoC Exploit</a></li>
                <li><a href='exploits/5.55/WebKit Expliot/index.html'>WebKit Exploit</a></li>
+              <li><a href='exploits/5.55/OMSK Demon/index.html'>OMSK DEMON (backup file)</a></li>
             </ul>
 
 
